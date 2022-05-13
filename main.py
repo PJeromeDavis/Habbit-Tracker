@@ -32,4 +32,4 @@ print(graph_update.text)
 url_endpoint = "https://pixe.la/v1/users/<username>/graphs/<graphID>"
 
 #FOR VIEWING THE GRAPH
-url_endpoint = "https://pixe.la/v1/users/<username>/graphs/<graphID>.html"
+url_endpoint = "https://pixe.la/v1/users/<username>/graphs/<graphID>.html"  #paste this url in browser
