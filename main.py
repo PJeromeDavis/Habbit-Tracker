@@ -13,7 +13,7 @@ response = requests.post(url="https://pixe.la/v1/users", json=parameters)
 print(response.text)
 
 graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs"
-graph_config = {"id":"(Provide your a graph id)", "name":"(Provide any name for your graph)", "unit":"mins", "type":"int", "color":"kuro", "timezone":"Asia/Tokyo"}
+graph_config = {"id":"(Provide your graph a graph id)", "name":"(Provide any name for your graph)", "unit":"mins", "type":"int", "color":"kuro", "timezone":"Asia/Tokyo"}
 headers = {"X-USER-TOKEN":TOKEN}
 #creating Graph
 graph_response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
@@ -29,7 +29,7 @@ print(graph_update.text)
 
 
 #FOR UPDATING A GRAPH
-url_endpoint = "https://pixe.la/v1/users/<username>/graphs/<graphID>"
+url_endpoint = f"https://pixe.la/v1/users/<username>/graphs/<graphID>"
 
 #FOR VIEWING THE GRAPH
-url_endpoint = "https://pixe.la/v1/users/<username>/graphs/<graphID>.html"  #paste this url in browser
+url_endpoint = "https://pixe.la/v1/users/<username>/graphs/<graphID>.html"  #paste this url in browser with your own username and graph id you provided
